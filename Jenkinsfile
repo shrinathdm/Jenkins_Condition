@@ -1,12 +1,13 @@
 pipeline {
-	agent any
-	parameters {
-		choice(
-			choices:['greeting','silence'],
+    agent any
+    parameters {
+        choice(
+	    choices:['greeting','silence'],
 			description: '',
 			name:'Requsted_Action')
 	}
-	stages
+	
+	stages{
 		stage('Speak'){
 			when{
 				//only say hello if a "greeting" is requested
