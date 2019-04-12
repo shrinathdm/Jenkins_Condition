@@ -21,7 +21,7 @@ pipeline {
                     submoduleCfg: [],
                     userRemoteConfigs: [[
                         credentialsId: 'shrinathdm',
-                        url: 'https://github.com/shrinathdm/Jenkins_Condition.git']]])
+                        url: 'https://github.com/shrinathdm/Jenkins_Condition.git']])
             }
         }
 
